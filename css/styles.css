@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200|Ubuntu:300');
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.wrapper {
+	width:80%;
+	margin: 0 auto;
+}
+
+/*-- Elements Spacing --*/
+header,
+nav,
+nav ul,
+nav ul li,
+div
+ {
+	margin: 5px 0;
+}
+
+header a{
+	text-decoration: none;
+	color: #000;
+}
+
+/*-- Navigation --*/
+nav ul {
+	padding: 0;
+	transition: max-height 0.2s;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul a {
+	padding: 0.5em 2em;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+nav a:link,
+nav a:visited {
+	color: #000
+}
+
+nav a:hover,
+nav a:active {
+	color: #fff;
+	background-color: #000;
+}
+
+/*-- Menu Handle --*/
+.handle {
+	display: none;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 5px;
+}
+
+.portfolio-handle {
+	display: none;
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 5px;
+}
+
+.handle img {
+	width: 40px;
+	filter:contrast(200%);
+	filter: invert(100%);
+}
+
+.portfolio-handle img {
+	width: 40px;
+
+}
+
+
+/*-- Image Slider --*/
+.autoplay {
+	margin-top: 1em;
+}
+
+.autoplay img {
+	height: 60vh;
+	margin: 0 auto;
+}
+
+
+/*-- Social Media Links --*/
+.social-links img {
+	color: ;
+	height: 50px;
+	margin: 1em 3em;
+}
+
+
+/*--|| Portfolio Page Styling ||--*/
+
+.portfolio-body {
+background-color: #222;
+}
+
+.portfolio-header {
+	color: #fff;
+}
+.portfolio-header a{
+	color: #fff;
+}
+
+/*-- Navigation --*/
+.portfolio-anchor:link,
+.portfolio-anchor:visited {
+	text-decoration: none;
+	color: #fff
+}
+
+.portfolio-anchor:hover,
+.portfolio-anchor:active {
+	color: #000;
+	background-color: #fff;
+}
+
+.portfolio-images img {
+	width: 300px;
+	height: auto;
+	margin: 1em 1em;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+.portfolio-heading {
+	color: #fff;
+}
+
+/*-- Social Media Links --*/
+.portfolio-social-links img {
+	color: ;
+	height: 50px;
+	margin: 1em 3em;
+	filter: invert(100%);
+}
+
+/*-- Footer --*/
+.portfolio-footer {
+	color: #fff;
+}
+
+/*--|| Media Queries ||--*/
+
+@media screen and (max-height: 30em){
+	
+	h1 {
+		font-size: 1.2em;
+	}
+
+	h3 {
+		font-size: 1em;
+	}
+
+	.social-links img,
+	.portfolio-social-links img {
+		display: list-item;
+	}
+}
+
+@media screen and (max-width: 48em) {
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.2em;
+	}
+
+	nav ul{
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	.showing {
+		max-height: 20em;
+	}
+	
+	nav ul li{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 15px;
+	}
+
+	.handle,
+	.portfolio-handle{
+		display: block;
+	}
+
+	.social-links img,
+	.portfolio-social-links img {
+		height:30px;
+	}
+}
+
+@media screen and (max-width: 60em) {
+
+	h1 {
+		font-size: 1.8em;
+	}
+
+	h3 {
+		font-size: 1.4em;
+	}
+	
+	.social-links img,
+	.portfolio-social-links img {
+		height:40px;
+	}
+}
+
+@media screen and (max-width: 72.5em) {
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+}
+
+

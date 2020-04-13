@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>Rajan Bharti</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<script src="js/modernizr-custom.js"></script>
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+
+<!-- Header -->
+			<header>
+
+				<a href="index.html"><h1>Rajan Bharti</h1></a>
+				<h3>CG Artist</h3>
+
+
+			</header>
+
+<!-- Navigation -->
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			<div class="handle"><img src="images/icons/burger-menu.png"></div>
+			</nav>
+
+<!-- Image Slider -->
+			<section>
+				<div class="autoplay">
+					<div><img src="images/three-d/5zigen-race-plus.jpg"></div>
+					<div><img src="images/three-d/a3-sportback2008.jpg"></div>
+					<div><img src="images/three-d/bmw-z4.jpg"></div>
+					<div><img src="images/three-d/character-1.jpg"></div>
+					<div><img src="images/three-d/interior-scene.jpg"></div>
+				</div>
+			</section>
+
+<!-- Social Links -->
+				<div class="social-links">
+					<a href="https://www.twitter.com/rajanbharti1991"><img src="images/social-icons/twitter-square.svg"></a>
+					<a href="https://www.facebook.com/rbcga"><img src="images/social-icons/facebook-square.svg"></a>
+					<a href="https://www.youtube.com/channel/UCsopacJjxugCSbljNhwLt1w/videos"><img src="images/social-icons/youtube-square.svg"></a>
+				</div>
+
+<!-- Footer -->
+			<footer>
+				<p>Copyright &copy; Rajan Bharti 2018.</p>
+			</footer>
+
+		</div><!-- /.wrapper -->
+
+<!-- Scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- jQuery -->
+		<script type="text/javascript" src="js/slick.min.js"></script> <!-- jQuery Plugin "slick" -->
+
+<!-- JQuery -->
+		<script>
+			$(document).ready(function(){
+		
+		// Image Slider
+				$('.autoplay').slick({
+					dots: false,
+					arrows: false,
+					autoplay: true,
+					autoplaySpeed: 3000,
+				});
+
+		// Menu Handle
+				$('.handle').on('click', function(){
+					$('nav ul').toggleClass('showing');
+				});
+
+			});
+		</script>
+	</body>
+</html>

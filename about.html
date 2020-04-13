@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>Rajan Bharti</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<script src="js/modernizr-custom.js"></script>
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+
+<!-- Header -->
+			<header>
+
+				<a href="index.html"><h1>Rajan Bharti</h1></a>
+				<h3>CG Artist</h3>
+
+
+			</header>
+
+<!-- Navigation -->
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<div class="handle"><img src="images/icons/burger-menu.png"></div>
+			</nav>
+
+<!-- Article -->
+			<article>
+				<h3 class="about-heading">About Me</h3>
+				<p>My name is Rajan Bharti. I am a 3D Artist.</p>
+				<p>Residing in Ottawa, ON, Canada.</p>
+				<p>I have been creating 3D Models for around 5 years.</p>
+				<p>My hobbies include playing guitar and piano, photography, sketching and digital painting.</p>
+			</article>
+
+<!-- Social Links -->
+				<div class="social-links">
+					<a href="https://www.twitter.com/rajanbharti1991"><img src="images/social-icons/twitter-square.svg"></a>
+					<a href="https://www.facebook.com/rbcga"><img src="images/social-icons/facebook-square.svg"></a>
+					<a href="https://www.youtube.com/channel/UCsopacJjxugCSbljNhwLt1w/videos"><img src="images/social-icons/youtube-square.svg"></a>
+				</div>			
+<!-- Footer -->
+			<footer>
+				<p>Copyright &copy; Rajan Bharti 2018.</p>
+			</footer>
+		</div><!-- /.wrapper -->
+
+<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/lightbox.js"></script>
+
+<!-- JQuery -->
+		<script>
+			$(document).ready(function(){
+		// Menu Handle
+				$('.handle').on('click', function(){
+					$('nav ul').toggleClass('showing');
+				});
+			});
+		</script>
+	</body>
+</html>
